@@ -8,6 +8,7 @@ import Trainer from './components/Trainer';
 import ComponentWithProps from './components/ComponentWithProps';
 import Converter from './components/Converter';
 import Login from './components/Login';
+import Car from './components/Car';
 
 function App() { // component - function that returns JSX
   return ( // if you want to return multiple things - put in a div
@@ -18,6 +19,7 @@ function App() { // component - function that returns JSX
       <MyButton />
       <Converter/>
       <Login/>
+      <Car/>
       <ComponentWithProps header='Yo' content='Look at this great content' number={2} nonexistent='boo'/>
     </div>
   );
