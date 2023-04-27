@@ -6,6 +6,7 @@ import Cat from './components/Cat';
 import MyButton from './components/MyButton';
 import Trainer from './components/Trainer';
 import ComponentWithProps from './components/ComponentWithProps';
+import Converter from './components/Converter';
 
 function App() { // component - function that returns JSX
   return ( // if you want to return multiple things - put in a div
@@ -14,6 +15,7 @@ function App() { // component - function that returns JSX
       <Cat />
       <Trainer/>
       <MyButton />
+      <Converter/>
       <ComponentWithProps header='Yo' content='Look at this great content' number={2} nonexistent='boo'/>
     </div>
   );
