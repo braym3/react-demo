@@ -15,7 +15,16 @@
 
 .component-title{
   color: rgb(114, 114, 219);
-  margin: 5%;
+}
+
+.my-button{
+  color: cadetblue;
+}
+
+.content{
+  margin: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .App-header {
