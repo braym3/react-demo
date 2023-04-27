@@ -7,6 +7,7 @@ import MyButton from './components/MyButton';
 import Trainer from './components/Trainer';
 import ComponentWithProps from './components/ComponentWithProps';
 import Converter from './components/Converter';
+import Login from './components/Login';
 
 function App() { // component - function that returns JSX
   return ( // if you want to return multiple things - put in a div
@@ -16,6 +17,7 @@ function App() { // component - function that returns JSX
       <Trainer/>
       <MyButton />
       <Converter/>
+      <Login/>
       <ComponentWithProps header='Yo' content='Look at this great content' number={2} nonexistent='boo'/>
     </div>
   );
