@@ -1,24 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import MyComponent from './MyComponent'; // import MyComponent
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+function App() { // component - function that returns JSX
+  return ( // if you want to return multiple things - put in a div
+    <MyComponent /> // MyComponent as an element
   );
 }
 
