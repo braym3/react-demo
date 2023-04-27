@@ -16,7 +16,7 @@ const Login = () => { // saves customers username & password from a login form
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicUsername">
                     <Form.Label>Username</Form.Label>
-                    <Form.Control type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)}/>
+                    <Form.Control type="text" placeholder="Username" name='username' value={username} onChange={(e) => setUsername(e.target.value)}/>
                     <Form.Text className="text-muted">
                     We will share all of your data.
                     </Form.Text>
@@ -24,7 +24,7 @@ const Login = () => { // saves customers username & password from a login form
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}/>
+                    <Form.Control type="password" placeholder="Password" name='password' value={password} onChange={(e) => setPassword(e.target.value)}/>
                 </Form.Group>
                 <Button variant="primary" type="submit" onClick={printDetails}>
                     Print
