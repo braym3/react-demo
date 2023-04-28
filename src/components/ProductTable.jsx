@@ -3,19 +3,21 @@ import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 
 const products = [
-    { id: 1, name: "Strawberries", amount: 283, type: "Food"},
-    { id: 2, name: "Bananas", amount: 347, type: "Food"},
-    { id: 3, name: "Chair", amount: 59, type: "Furniture"}
+    { id: 1, name: "Strawberries", amount: 283, productType: "Food"},
+    { id: 2, name: "Bananas", amount: 347, productType: "Food"},
+    { id: 3, name: "Chair", amount: 59, productType: "Furniture"}
 ];
 
-const productRows = products.map(product =>
-    <tr key={product.id}>
-        <td>{product.id}</td>
-        <td>{product.name}</td>
-        <td>{product.amount}</td>
-        <td>{product.type}</td>
-    </tr>
-);
+function productRows(productType){
+    return(products.map(product =>
+        <tr key={product.id}>
+            <td>{product.id}</td>
+            <td>{product.name}</td>
+            <td>{product.amount}</td>
+            <td>{product.productType}</td>
+        </tr>
+    ));
+};
 
 const ProductTable = () => {
 
@@ -24,9 +26,9 @@ const ProductTable = () => {
     return(
         <div className='content'>
             <Form>
-            <Form.Group className="mb-3" controlId="formBrand">
+            <Form.Group className="mb-3" controlId="formType">
                 <Form.Label>Search by product type</Form.Label>
-                <Form.Control type="text" placeholder="Brand" value={productType} onChange={(e) => setType(e.target.value)}/>
+                <Form.Control type="text" placeholder="Type" value={productType} onChange={(e) => setType(e.target.value)}/>
                 </Form.Group>
             </Form>
 
@@ -36,10 +38,11 @@ const ProductTable = () => {
                         <th>#</th>
                         <th>Name</th>
                         <th>Amount</th>
+                        <th>Type</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {productRows({productType})}
+                    {productRows}
                 </tbody>
             </Table>
         </div>

@@ -10,6 +10,7 @@ import Converter from './components/Converter';
 import Login from './components/Login';
 import Car from './components/Car';
 import ProductTable from './components/ProductTable';
+import Counter from './components/Counter';
 
 function App() { // component - function that returns JSX
   return ( // if you want to return multiple things - put in a div
@@ -22,6 +23,7 @@ function App() { // component - function that returns JSX
       <Login/>
       <Car/>
       {/* <ProductTable/> */}
+      <Counter/>
       <ComponentWithProps header='Yo' content='Look at this great content' number={2} nonexistent='boo'/>
     </div>
   );
