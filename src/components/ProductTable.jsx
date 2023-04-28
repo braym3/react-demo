@@ -18,12 +18,12 @@ const ProductTable = () => {
     ];
     
     const productRows = products.filter(p => p?.productType?.toLowerCase().startsWith(searchedType.toLowerCase())).map(product => (
-            <tr key={product.id}>
-                <td>{product.id}</td>
-                <td>{product.name}</td>
-                <td>{product.amount}</td>
-                <td>{product.productType}</td>
-            </tr>
+        <tr key={product.id}>
+            <td>{product.id}</td>
+            <td>{product.name}</td>
+            <td>{product.amount}</td>
+            <td>{product.productType}</td>
+        </tr>
     ));
 
     return(

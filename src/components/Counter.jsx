@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import Alert from 'react-bootstrap/Alert';
 
 const Counter = () => {
     const [count, setCount] = useState(0);
@@ -10,7 +9,7 @@ const Counter = () => {
 
     return(
         <>
-        <div className='row'>
+        <div className='row counter-container'>
             <div className='content col-5'>
                 <div>
                     <label>Count:</label>

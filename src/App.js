@@ -71,7 +71,7 @@ function App() { // component - function that returns JSX
         </Accordion.Item>
         
         <Accordion.Item eventKey="7">
-          <Accordion.Header>Extreme Counter</Accordion.Header>
+          <Accordion.Header>Cool Counter</Accordion.Header>
           <Accordion.Body>
             <Counter/>
           </Accordion.Body>
