@@ -24,7 +24,7 @@ function App() { // component - function that returns JSX
       <Converter/>
       <Login/>
       <Car/>
-      {/* <ProductTable/> */}
+      <ProductTable/>
       <Counter/>
 
       {people.map(({id, name, age}) => 
