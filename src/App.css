@@ -17,6 +17,11 @@
   color: rgb(114, 114, 219);
 }
 
+.page-title{
+  color: rgb(114, 172, 219);
+  margin: 3%;
+}
+
 .my-button{
   color: cadetblue;
 }

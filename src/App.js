@@ -19,6 +19,8 @@ function App() { // component - function that returns JSX
   return ( // if you want to return multiple things - put in a div
     <div>
 
+      <h1 className="page-title">React Demo Components</h1>
+
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Cats</Accordion.Header>
@@ -85,9 +87,15 @@ function App() { // component - function that returns JSX
             )};
           </Accordion.Body>
         </Accordion.Item>
+
+        <Accordion.Item eventKey="9">
+          <Accordion.Header>Ugly component using props</Accordion.Header>
+          <Accordion.Body>
+            <ComponentWithProps header='Yo' content='Look at this great content' number={2} nonexistent='boo'/>
+          </Accordion.Body>
+        </Accordion.Item>
       </Accordion>
 
-      {/* <ComponentWithProps header='Yo' content='Look at this great content' number={2} nonexistent='boo'/> */}
     </div>
   );
 }
