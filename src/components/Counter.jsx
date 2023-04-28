@@ -16,8 +16,8 @@ const Counter = () => {
                     <label>Count:</label>
                     <input value={count} readOnly className='count-output'/>
                 </div>
-                <div>
-                    <ButtonGroup aria-label="Counter" className='content counter-buttons'>
+                <div className='content counter-buttons'>
+                    <ButtonGroup aria-label="Counter">
                         <Button variant="secondary" onClick={() => {
                             setHistoryId(historyId + 1);
                             setHistory([...countHistory, { id: historyId, operation: `${count} - 5 = ${count-5}` }]);

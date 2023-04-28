@@ -9,9 +9,12 @@ const ProductTable = () => {
 
     const products = [
         { id: 1, name: "Strawberries", amount: 283, productType: "Food"},
-        { id: 2, name: "Bananas", amount: 347, productType: "Food"},
-        { id: 3, name: "Chair", amount: 59, productType: "Furniture"},
-        { id: 4, name: "Bed", amount: 59, productType: "Furniture"}
+        { id: 2, name: "Pen", amount: 59, productType: "Stationery"},
+        { id: 3, name: "Bananas", amount: 347, productType: "Food"},
+        { id: 4, name: "Chair", amount: 59, productType: "Furniture"},
+        { id: 5, name: "Socks", amount: 123, productType: "Clothing"},
+        { id: 6, name: "Bed", amount: 59, productType: "Furniture"},
+        { id: 7, name: "Pencil", amount: 239, productType: "Stationery"}
     ];
     
     const productRows = products.filter(p => p?.productType?.toLowerCase().startsWith(searchedType.toLowerCase())).map(product => (
@@ -21,7 +24,8 @@ const ProductTable = () => {
                 <td>{product.amount}</td>
                 <td>{product.productType}</td>
             </tr>
-            ));
+    ));
+
     return(
         <div className='content'>
             <Form>
